@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: rgb(251, 249, 229);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+#quote-box {
+  display: table;
+  padding: 40px 45px;
+  border-radius: 15px;
+  text-align: center;
+  width: 500px;
+  margin: 0px auto;
+  height: 300px;
+  font-size: 15px;
+  background-color: rgb(216, 189, 241, 0.75);
+  position: relative;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#author {
+  width: 450px;
+  height: auto;
+  clear: both;
+  color: white;
+  padding-top: 20px;
+  font-size: 1em;
+  text-align: right;
+  position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#new-quote {
+  background-color: rgba(170, 94, 241, 0.75);
+  width: 75px;
+  height: auto;
+  color: white;
+  border-radius: 3px;
+  font-style: oblique;
+  border: dotted;
+  position: relative;
+  cursor: pointer;
+}
+#new-quote:hover {
+  background-color: rgba(231, 222, 240, 0.75);
 }
